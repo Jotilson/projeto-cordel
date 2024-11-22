@@ -1,0 +1,115 @@
+ @charset "UTF-8";
+
+ @font-face {
+    font-family: 'Passion';
+    src: url('fontes/Passion_One/PassionOne-Regular.ttf') format('Truetype');
+ }
+ @font-face {
+    font-family: 'regulars';
+    src: url('fontes/Sriracha/Sriracha-Regular.ttf') format('Truetype');
+ }
+  :root{
+    --font-padrao: arial,Verdana,sans-serif;
+  }
+
+ *{
+    padding: 0px;
+    margin: 0px;
+ }  
+ body,html{
+    background-color: darkgray;
+        min-height: 100vh;
+        font-family: var(--font-padrao);
+   
+ }
+ header{
+  min-height: 10vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+   header>h1{
+    font-family: 'Passion';
+    font-size: 7vw;
+    padding-top: 30px;
+  
+    font-variant: small-caps;
+   }
+  
+   nav{
+    padding-bottom: 50px;
+   }
+   nav a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    
+   }
+    a:hover{
+        text-decoration: underline;
+    }
+
+    .normal{
+        background-color: white;
+        color: black;
+      
+    } 
+   section p{
+    padding-bottom: 2em;
+   }
+    section.imagem p{
+           
+        background-color: rgba(15, 2, 2, 0.535);
+        display: inline-block;
+       padding: 20px;
+        color: white;
+    }
+    section.imagem{
+    background-image: url('pacote-d012/imagens/background001.jpg');
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     color: white;
+     box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0);
+    
+   }
+   .imagem2{
+    background-image: url('pacote-d012/imagens/background002.jpg');
+    background-attachment: fixed;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+   }
+   .imagem2 p{
+    background-color: rgba(15, 2, 2, 0.555);
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    text-shadow: 1px 1px 0px black;
+   }
+   section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+   padding-left: 30px;
+   font-family: 'Regulars';
+   font-size: 3.5vw;
+  
+   }
+  
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+ 
+    font-family: var(--font-padrao);
+}
+footer a{
+    color: white;
+    text-decoration: none;
+   
+   
+}
